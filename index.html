@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Height measuring Tool</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='./style.css'>
+    <script src='./script.js' defer></script>
+</head>
+
+<body>
+    <button onclick="startApp()">Start</button>
+    <br><br>
+
+    Distance:
+
+    <input id="distance" type="range" min="2" max="50" value="10">
+
+    <br><br>
+
+    <button onclick="setBottom()">Set Bottom</button>
+    <button onclick="setTop()">Set Top</button>
+
+    <br><br>
+
+    <div class="cameraBox">
+
+        <video id="video" autoplay playsinline></video>
+
+        <div class="crosshair"></div>
+
+    </div>
+
+    <br>
+
+    <div id="label"></div>
+
+    <div id="heightInfo"></div>
+</body>
+
+</html>

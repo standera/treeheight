@@ -1,0 +1,46 @@
+.cameraBox {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+}
+
+video {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* 🎯 Crosshair */
+
+.crosshair {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 40px;
+    height: 40px;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+}
+
+/* horizontal line */
+
+.crosshair::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    height: 2px;
+    background: red;
+}
+
+/* vertical line */
+
+.crosshair::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 2px;
+    background: red;
+}
