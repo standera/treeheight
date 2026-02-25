@@ -38,7 +38,7 @@ async function startApp() {
 // ⭐ Orientation updates
 function onOrientationChanged(event) {
     if (event.beta === null) return;
-    angleRaw = event.beta;
+    angleRaw = event.beta - 90;
 
     // strong smoothing
     angleSmooth = 0.95 * angleSmooth + 0.05 * angleRaw;
