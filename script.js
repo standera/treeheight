@@ -23,7 +23,7 @@ async function startApp() {
         window.addEventListener("deviceorientation", onOrientationChanged);
         // camera
         const stream = await navigator.mediaDevices.getUserMedia({
-            video: true
+            video: facingMode: "environment"
         });
         video.srcObject = stream;
     }
